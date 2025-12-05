@@ -1,5 +1,5 @@
 // CAMBIA LA FECHA AQUÍ (formato: "2025-12-13 00:00:00")
-const FECHA_REVELAR = new Date("2025-12-13 00:00:00").getTime();
+const FECHA_REVELAR = new Date("2025-12-03 00:00:00").getTime();
 
 const countdownEl = document.getElementById('countdown');
 const letterEl = document.getElementById('letter');
