@@ -143,3 +143,32 @@ h1 {
   #timer span { font-size: 2.8rem; }
   .content { padding: 35px 25px; font-size: 1.25rem; }
 }
+/* ←←← AÑADE ESTO AL FINAL DE TU style.css ←←← */
+
+html, body {
+  height: auto !important;
+  min-height: 100vh;
+}
+
+body {
+  display: block;              /* cambia flex por block cuando hay scroll */
+  padding: 40px 20px;          /* espacio bonito arriba y abajo */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 100px;       /* espacio extra al final para que se vea bien el último renglón */
+}
+
+/* Cuando se muestre la carta, vuelve a centrar verticalmente solo si cabe en pantalla */
+#letter:where(:not(.hidden)) ~ #countdown,
+#letter:where(:not(.hidden)) {
+  margin-top: 10vh;
+}
+
+/* Pequeño truco para que en móvil sea súper fácil leer */
+.content {
+  max-height: none !important;
+  overflow: visible !important;
+}
